@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>CRUD Project</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>MovieController</servlet-name>
+    <servlet-class>com.ma.controller.MovieController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MovieController</servlet-name>
+    <url-pattern>/MovieController.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>UserController</servlet-name>
+    <servlet-class>com.ma.controller.UserController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserController</servlet-name>
+    <url-pattern>/UserController.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>BookingController</servlet-name>
+    <servlet-class>com.ma.controller.BookingController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BookingController</servlet-name>
+    <url-pattern>/BookingController.do</url-pattern>
+  </servlet-mapping>
+</web-app>
